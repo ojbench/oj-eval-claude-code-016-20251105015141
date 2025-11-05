@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "bpt.h"
+#include "file_bpt.h"
 
 using namespace std;
 
@@ -12,7 +12,7 @@ int main() {
     int n;
     cin >> n;
 
-    BPlusTree database;
+    FileBPlusTree database;
 
     for (int i = 0; i < n; i++) {
         string command;
