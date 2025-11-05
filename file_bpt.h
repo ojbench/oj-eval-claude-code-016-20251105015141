@@ -83,7 +83,6 @@ public:
 
     void insert(const std::string& key, int value) {
         data[key].insert(value);
-        saveToFile();
     }
 
     void remove(const std::string& key, int value) {
@@ -93,7 +92,6 @@ public:
             if (it->second.empty()) {
                 data.erase(it);
             }
-            saveToFile();
         }
     }
 
